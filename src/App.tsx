@@ -3,6 +3,7 @@ import './App.css'
 import { BarChart } from './components/BarChart'
 import { CounterAtom } from './components/CounterAtom'
 import { CounterAtomChild } from './components/CounterAtomChild'
+import { ToDoList } from './components/ToDoList';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <CounterAtomChild />
       <div style={{marginTop: "20px"}}>
       <BarChart data={data} width={500} height={300} />
+      <ToDoList />
       </div>
     </>
   )
