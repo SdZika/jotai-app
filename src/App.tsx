@@ -13,6 +13,9 @@ import { ToDoList } from './components/ToDoList';
 import { Modal } from './components/Modal';
 import { Carousel } from './components/Carousel';
 import { StarRating } from './components/StarRating';
+import { IntervalComponent } from './components/IntervalComponent';
+import { AppRoutes } from './components/AppRoutes';
+import { Navbar } from './components/Navbar';
 
 function App() {
 
@@ -39,6 +42,8 @@ function App() {
 
   return (
     <>
+      <AppRoutes />
+      <Navbar />
       <h1>Hello World!</h1>
       <CounterAtom />
       <CounterAtomChild />
@@ -60,6 +65,7 @@ function App() {
       </Modal>
       <Carousel images={images} />
       <StarRating />
+      <IntervalComponent />
     </>
   )
 }
